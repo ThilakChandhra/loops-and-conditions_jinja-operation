@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+
+        <!--
+        <h1 style="color: blue;">IF CONDITION</h1>
+            {% if a > b %}
+                <h1>Inside if condition is True</h1>
+                <h2>{{a}}</h2>
+            {% endif %}
+        -->
+
+        <!--
+        <h1 style="color: blueviolet;">IF-ELSE CONDITION</h1>
+            {% if a > b %}
+                <h1>Inside if condition is True</h1>
+                <h2>A is max : {{a}}</h2>
+            {% else %}
+                <h1>Inside else condition is True</h1>
+                <h2>B is max : {{b}}</h2>
+            {% endif %}
+        -->
+
+        <!--
+        <h1 style="color: green;">IF-ELIF CONDITION</h1>
+            {% if a > b and a > c %}
+                <h1>Inside if condition is True</h1>
+                <h2>A is max : {{a}}</h2>
+            {% elif b > c %}
+                <h1>Inside elif condition is True</h1>
+                <h2>B is max : {{b}}</h2>
+            {% else %}
+                <h1>Inside else condition is True</h1>
+                <h2>C is max : {{c}}</h2>
+            {% endif %}
+        -->
+
+        <h1 style="color: orangered;">NESTED IF</h1>
+            {% if a > b %}
+                {% if a > c  %}
+                    <h1>Inside inner if condition is True</h1>
+                    <h2>A is max : {{a}}</h2>
+                {% else % }
+                    <h1>Inside inner else condition is True</h1>
+                    <h2>C is max : {{c}}</h2>
+                {% endif %}
+            {% else %}
+                {% if b > c %}
+                    <h1>Inside inner if condition is True</h1>
+                    <h2>B is max : {{b}}</h2>
+                {% else %}
+                    <h1>Inside inner else condition is True</h1>
+                    <h2>C is max : {{c}}</h2>
+                 {% endif %}
+            {% endif %}
+    </center>
+</body>
+</html>
